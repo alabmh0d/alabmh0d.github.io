@@ -20,17 +20,14 @@
             }
         </style>
 
-        <title>Amazon Kinesis Video Streams Media Viewer</title>
+        <title>Opeta</title>
     </head>
     <body>
         <div class="container mb-3">
             <div class="row mt-3 mb-3">
                 <div class="col-md-12">
-                    <h1>Amazon Kinesis Video Streams Media Viewer</h1>
-                    Documentation:
-                    <a href="https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_GetHLSStreamingSessionURL.html">HLS</a>
-                    -
-                    <a href="https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_GetDASHStreamingSessionURL.html">DASH</a>
+                    <h1>Opeta - Demo</h1>
+
                 </div>
             </div>
             <div class="row loader"></div>
@@ -52,21 +49,7 @@
                         <div class="form-group">
                             <label>Region</label>
                             <select id="region" class="form-control form-control-sm">
-                                <option>ap-east-1</option>
-                                <option>ap-northeast-1</option>
-                                <option>ap-northeast-2</option>
-                                <option>ap-south-1</option>
-                                <option>ap-southeast-1</option>
-                                <option>ap-southeast-2</option>
-                                <option>ca-central-1</option>
-                                <option>eu-central-1</option>
-                                <option>eu-west-1</option>
-                                <option>eu-west-2</option>
-                                <option>eu-west-3</option>
-                                <option>sa-east-1</option>
-                                <option selected>us-east-1</option>
-                                <option>us-east-2</option>
-                                <option>us-west-2</option>
+                                <option selected>us-west-2</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -77,14 +60,8 @@
                             <label>AWS Secret Key</label>
                             <input id="secretAccessKey" type="password" class="form-control form-control-sm"/>
                         </div>
-                        <div class="form-group">
-                            <label>AWS Session Token (Optional)</label>
-                            <input id="sessionToken" type="password" class="form-control form-control-sm" />
-                        </div>
-                        <div class="form-group">
-                            <label>Endpoint (Optional)</label>
-                            <input id="endpoint" type="text" class="form-control form-control-sm" />
-                        </div>
+
+
                         <div class="form-group">
                             <label>Stream name</label>
                             <input id="streamName" type="text" class="form-control form-control-sm"/>
@@ -141,14 +118,7 @@
                                 <option selected>NEVER</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label>Max Manifest/Playlist Fragment Results</label>
-                            <input id="maxResults" type="text" class="form-control form-control-sm"/>
-                        </div>
-                        <div class="form-group">
-                            <label>Expires (seconds)</label>
-                            <input id="expires" type="text" class="form-control form-control-sm"/>
-                        </div>
+
                         <button id="start" type="submit" class="btn btn-primary">Start Playback</button>
                     </div>
                     <div class="col-md-8">
